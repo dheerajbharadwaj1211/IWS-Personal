@@ -44,16 +44,29 @@
                 <div class="dropdown-container">
                     <select id="gearSelect" class="gear-dropdown">
                         <option value="">Choose a Gear...</option>
-                        <option value="base">Base Form</option>
-                        <option value="gear2">Gear Second</option>
-                        <option value="gear4">Gear Fourth</option>
-                        <option value="gear5">Gear Fifth</option>
+                        <option value="openpage.html">Base Form</option>
+                        <option value="gear2.html">Gear Second</option>
+                        <option value="gear4.html">Gear Fourth</option>
+                        <option value="gear5.html">Gear Fifth</option>
                     </select>
                     <button id="evolveBtn" class="evolve-btn" disabled>EVOLVE!</button>
                 </div>
             </div>
         </main>
 <script>
-        </script>
+        const gearSelect = document.getElementById('gearSelect');
+        const evolveBtn = document.getElementById('evolveBtn');
+
+        gearSelect.addEventListener('change', function() {
+            evolveBtn.disabled = this.value === '';
+        });
+
+        evolveBtn.addEventListener('click', function() {
+            const selectedGear = gearSelect.value;
+            if (selectedGear) {
+                window.location.href = selectedGear;
+            }
+        });
+</script>
 </body>
 </html>
