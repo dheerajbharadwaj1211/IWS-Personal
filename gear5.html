@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey D. Luffy - Power Evolutions</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        .background-gif {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://media1.tenor.com/m/Qm01Xi99XvgAAAAd/luffy-gear-5.gif" alt="Luffy Gear 5 Background" class="background-gif">
+    
+    <div class="container">
+        <header class="hero-section">
+            <h1 class="main-title">Monkey D. Luffy</h1>
+            <h2 class="subtitle">Power Evolutions</h2>
+        </header>
+
+        <main class="gear-selection">
+            <div class="selection-container">
+                <h3>Select Luffy's Gear Evolution</h3>
+                <div class="dropdown-container">
+                    <select id="gearSelect" class="gear-dropdown">
+                        <option value="">Choose a Gear...</option>
+                        <option value="base">Base Form</option>
+                        <option value="gear2">Gear Second</option>
+                        <option value="gear3">Gear Third</option>
+                        <option value="gear4">Gear Fourth</option>
+                    </select>
+                    <button id="evolveBtn" class="evolve-btn" disabled>EVOLVE!</button>
+                </div>
+            </div>
+        </main>
+<script>
+        </script>
+</body>
+</html>
